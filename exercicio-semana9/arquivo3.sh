@@ -12,7 +12,7 @@ done
 
 echo ""
 echo "FILES"
-echo""
+echo ""
 
 for j in $(ls)
 do
