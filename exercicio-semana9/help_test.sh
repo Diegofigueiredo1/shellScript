@@ -1,0 +1,63 @@
+#!/bin/bash
+
+for i in $*
+do
+	if [ ${i} = "logica" ]; then
+		echo "Operadores para logica"
+		echo ""
+		echo " ! Logica NOT ou NÃO"
+		echo "-o Logica OU, (OR) ou ||"
+		echo "-a Logica E, (AND) ou &&"
+		echo ""
+	elif [ ${i} = "aritmetica" ]; then
+		echo "Operadores para números"
+		echo ""
+		echo "Comando = test 'variável/parâmetro' operador 'variável/parâmetro'"
+		echo "Comando = [ 'variável/parâmetro' operador 'variável/parâmetro' ]"
+		echo ""
+		echo "-lt Verifica se é menor"
+		echo "-gt Verifica se é maior"
+		echo "-le Verifica se é menor ou igual"
+		echo "-ge Verifica se é maior ou igual"
+		echo "-eq Verifica se é igual"
+		echo "-ne Verifica se é diferente"
+		echo ""
+	elif [ ${i} = "strings" ]; then
+		echo "Operadores para Strings"
+		echo ""
+		echo "Comando = test 'variável/parâmetro' operador 'variável/parâmetro'"
+		echo "Comando = [ 'variável/parâmetro' operador 'variável/parâmetro' ]"
+		echo ""
+		echo "= Verifica se é igual"
+		echo "!= Verifica se é diferente"
+		echo ""
+	elif [ ${i} = "variaveis" ]; then
+		echo "Operadores para variáveis"
+		echo ""
+		echo "Comando = test operador 'variável/parâmetro'"
+		echo "Comando = [ operador 'variável/parâmetro']"
+		echo ""
+		echo "-n Verifica se não é nula"
+		echo "-z Verifica se é nula"
+		echo ""
+	elif [ ${i} = "arquivos" ]; then
+		echo "Operadores para arquivos/diretórios"
+		echo ""
+		echo "Comando = test operador 'variável/parâmetro'"
+		echo "Comando = [ operador 'variável/parâmetro']"
+		echo ""
+		echo "-d Verifica se é diretório"
+		echo "-f Verifica se é arquivo"
+		echo "-e Verifica se existe"
+		echo "-O Verifica se o dono do arquivo é o usuário que esta executando"
+		echo "-s Verifica se o arquivo não esta vazio"
+		echo "-L Verifica se é um link-simbólico"
+		echo "-r Verifica se o usuário tem permissão de leitura"
+		echo "-w Verifica se o usuário tem permissão de gravação"
+		echo "-x Verifica se o usuário tem permissão de execução"
+		echo "-nt Verifica se é mais recente"
+		echo "-ot Verifica se é mais antigo"
+		echo "-ef Verifica se é igual"
+		echo ""
+	fi
+done
