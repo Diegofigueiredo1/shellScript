@@ -14,7 +14,7 @@ function remover_sed {
 
 
 function sub_awk {
-	$(awk '{gsub(/[!@#$%¨&*\/\{\[\]\(\)\}]+/, "<?>" )}{print $0}' $1 > /tmp/subawk.txt)
+	$(awk '{gsub(/[!@#$%¨&\ *\.\,\/\{\[\]\(\)\}]+/, "<?>" )}{print $0}' $1 > /tmp/subawk.txt)
 	echo "/tmp/subawk.txt"
 }
 
